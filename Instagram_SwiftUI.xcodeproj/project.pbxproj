@@ -10,6 +10,7 @@
 		5C5D16B72AB6EA68004A18B4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D16B62AB6EA68004A18B4 /* FeedView.swift */; };
 		5C5D16B92AB6EA6E004A18B4 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D16B82AB6EA6E004A18B4 /* FeedCell.swift */; };
 		5C5D16BB2AB6EDD7004A18B4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D16BA2AB6EDD7004A18B4 /* SearchView.swift */; };
+		5C5D16BD2AB6F465004A18B4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D16BC2AB6F465004A18B4 /* LoginView.swift */; };
 		5C65504E2AB6C59E0065374F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65504D2AB6C59E0065374F /* MainTabView.swift */; };
 		5C6550502AB6CED20065374F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65504F2AB6CED20065374F /* ProfileView.swift */; };
 		5C6550532AB6D3D50065374F /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6550522AB6D3D50065374F /* UserStatView.swift */; };
@@ -23,6 +24,7 @@
 		5C5D16B62AB6EA68004A18B4 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		5C5D16B82AB6EA6E004A18B4 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		5C5D16BA2AB6EDD7004A18B4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		5C5D16BC2AB6F465004A18B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5C65504D2AB6C59E0065374F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		5C65504F2AB6CED20065374F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5C6550522AB6D3D50065374F /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		5C6550442AB6C4830065374F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				5C5D16BC2AB6F465004A18B4 /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				5C5D16B92AB6EA6E004A18B4 /* FeedCell.swift in Sources */,
 				5C6550502AB6CED20065374F /* ProfileView.swift in Sources */,
 				5CB333692AB6C35B00145235 /* ContentView.swift in Sources */,
+				5C5D16BD2AB6F465004A18B4 /* LoginView.swift in Sources */,
 				5CB333672AB6C35B00145235 /* InstagramApp.swift in Sources */,
 				5C5D16BB2AB6EDD7004A18B4 /* SearchView.swift in Sources */,
 				5C6550532AB6D3D50065374F /* UserStatView.swift in Sources */,
