@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C65504E2AB6C59E0065374F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65504D2AB6C59E0065374F /* MainTabView.swift */; };
 		5CB333672AB6C35B00145235 /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB333662AB6C35B00145235 /* InstagramApp.swift */; };
 		5CB333692AB6C35B00145235 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB333682AB6C35B00145235 /* ContentView.swift */; };
 		5CB3336B2AB6C35C00145235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB3336A2AB6C35C00145235 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C65504D2AB6C59E0065374F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		5CB333632AB6C35B00145235 /* Instagram_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB333662AB6C35B00145235 /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		5CB333682AB6C35B00145235 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		5C65504A2AB6C4DE0065374F /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				5C65504D2AB6C59E0065374F /* MainTabView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				5CB333692AB6C35B00145235 /* ContentView.swift in Sources */,
 				5CB333672AB6C35B00145235 /* InstagramApp.swift in Sources */,
+				5C65504E2AB6C59E0065374F /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
