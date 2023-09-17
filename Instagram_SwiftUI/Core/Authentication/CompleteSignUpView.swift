@@ -40,6 +40,7 @@ struct CompleteSignUpView: View {
             
             Spacer()
         }
+        .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Image(systemName: "chevron.left")
