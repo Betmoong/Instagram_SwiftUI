@@ -19,6 +19,8 @@
 		5C543E3E2ABEBFEF008DF117 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C543E3D2ABEBFEF008DF117 /* FirebaseFirestore */; };
 		5C543E402ABEBFEF008DF117 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5C543E3F2ABEBFEF008DF117 /* FirebaseFirestoreSwift */; };
 		5C543E422ABEBFEF008DF117 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5C543E412ABEBFEF008DF117 /* FirebaseStorage */; };
+		5C543E462ABEC485008DF117 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C543E452ABEC485008DF117 /* AuthService.swift */; };
+		5C543E4A2ABECC09008DF117 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C543E492ABECC09008DF117 /* ContentViewModel.swift */; };
 		5C5D16B72AB6EA68004A18B4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D16B62AB6EA68004A18B4 /* FeedView.swift */; };
 		5C5D16B92AB6EA6E004A18B4 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D16B82AB6EA6E004A18B4 /* FeedCell.swift */; };
 		5C5D16BB2AB6EDD7004A18B4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D16BA2AB6EDD7004A18B4 /* SearchView.swift */; };
@@ -47,6 +49,8 @@
 		5C3FE2632AB8507F00E69CF2 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Instagram_SwiftUI/Core/Model/Post.swift; sourceTree = SOURCE_ROOT; };
 		5C3FE2642AB8507F00E69CF2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Instagram_SwiftUI/Core/Model/User.swift; sourceTree = SOURCE_ROOT; };
 		5C543E382ABEBF74008DF117 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5C543E452ABEC485008DF117 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		5C543E492ABECC09008DF117 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		5C5D16B62AB6EA68004A18B4 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		5C5D16B82AB6EA6E004A18B4 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		5C5D16BA2AB6EDD7004A18B4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,42 @@
 			path = UploadPost;
 			sourceTree = "<group>";
 		};
+		5C543E432ABEC464008DF117 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D16BC2AB6F465004A18B4 /* LoginView.swift */,
+				5C5E014C2AB7039D00FD738C /* AddEmailView.swift */,
+				5C5E01502AB706E400FD738C /* CreateUsernameView.swift */,
+				5C5E01522AB70DCB00FD738C /* CreatePasswordView.swift */,
+				5C5E01542AB70EA700FD738C /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C543E442ABEC475008DF117 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5C543E452ABEC485008DF117 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5C543E472ABECBDF008DF117 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CB333682AB6C35B00145235 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C543E482ABECBE6008DF117 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C543E492ABECC09008DF117 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5C5D16B52AB6EA4C004A18B4 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,11 +189,8 @@
 		5C6550442AB6C4830065374F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				5C5D16BC2AB6F465004A18B4 /* LoginView.swift */,
-				5C5E014C2AB7039D00FD738C /* AddEmailView.swift */,
-				5C5E01502AB706E400FD738C /* CreateUsernameView.swift */,
-				5C5E01522AB70DCB00FD738C /* CreatePasswordView.swift */,
-				5C5E01542AB70EA700FD738C /* CompleteSignUpView.swift */,
+				5C543E442ABEC475008DF117 /* Service */,
+				5C543E432ABEC464008DF117 /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -171,6 +208,8 @@
 		5C6550472AB6C4A00065374F /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				5C543E472ABECBDF008DF117 /* View */,
+				5C543E482ABECBE6008DF117 /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -226,7 +265,6 @@
 				5C6550412AB6C3F30065374F /* Extensions */,
 				5C3FE2522AB82F7C00E69CF2 /* Model */,
 				5C65503F2AB6C3EA0065374F /* Services */,
-				5CB333682AB6C35B00145235 /* ContentView.swift */,
 				5C543E382ABEBF74008DF117 /* GoogleService-Info.plist */,
 				5CB3336A2AB6C35C00145235 /* Assets.xcassets */,
 				5CB3336C2AB6C35C00145235 /* Preview Content */,
@@ -323,12 +361,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C3FE2572AB836BF00E69CF2 /* CurrentUserProfileView.swift in Sources */,
+				5C543E462ABEC485008DF117 /* AuthService.swift in Sources */,
 				5C3FE2602AB846C500E69CF2 /* UploadPostView.swift in Sources */,
 				5C5D16B92AB6EA6E004A18B4 /* FeedCell.swift in Sources */,
 				5C5E01572AB7111E00FD738C /* SignUpView.swift in Sources */,
 				5C6550502AB6CED20065374F /* ProfileView.swift in Sources */,
 				5C3FE2652AB8507F00E69CF2 /* Post.swift in Sources */,
 				5CB333692AB6C35B00145235 /* ContentView.swift in Sources */,
+				5C543E4A2ABECC09008DF117 /* ContentViewModel.swift in Sources */,
 				5C5D16BD2AB6F465004A18B4 /* LoginView.swift in Sources */,
 				5C3FE25B2AB8410E00E69CF2 /* PostGridView.swift in Sources */,
 				5CB333672AB6C35B00145235 /* InstagramApp.swift in Sources */,
