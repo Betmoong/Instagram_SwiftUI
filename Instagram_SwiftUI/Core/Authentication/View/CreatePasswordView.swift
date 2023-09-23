@@ -8,16 +8,52 @@
 import SwiftUI
 
 struct CreatePasswordView: View {
-    @State private var password = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     var body: some View {
-        SignUpView(title: "Create a password",
-                   subtitle: "Your password must be at least 6 characters in length",
-                   inputPlaceholder: "Password",
-                   isSecureField: true,
-                   destinationView: AnyView(CompleteSignUpView())
-        )
+        VStack(spacing: 12) {
+            Text("Create a password")
+                .font(.title2)
+                .fontWeight(.bold)
+                .padding(.top)
+            
+            Text("Your password must be at least 6 characters in length")
+                .font(.footnote)
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 24)
+            
+            SecureField("Password", text: self.$viewModel.password)
+                .textInputAutocapitalization(.never)
+                .modifier(IGTextFieldModifier())
+                .padding(.top)
+            
+            NavigationLink {
+                CompleteSignUpView()
+                    .navigationBarBackButtonHidden()
+            } label: {
+                Text("Next")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 360, height: 44)
+                    .background(Color(.systemBlue))
+                    .cornerRadius(10)
+            }
+            .padding(.vertical)
+            
+            Spacer()
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Image(systemName: "chevron.left")
+                    .imageScale(.large)
+                    .onTapGesture {
+                        self.dismiss()
+                    }
+            }
+        }
     }
 }
 
